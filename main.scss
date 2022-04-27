@@ -27,7 +27,7 @@ main {
     justify-content: center;
 }
 
-.price {
+.price-card {
     min-height: 770px;
     max-width: 380px;
     background-color: rgba(51, 66, 71, 1);
@@ -37,23 +37,23 @@ main {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    &__card {
+    &__title {
         width: 380px;
         height: 130px;
         @extend %center;
         flex-direction: column;
-        &__title {
+        &_text {
             font-family: "Montserrat";
             font-size: 35px;
             line-height: 43px;
             font-weight: 700;
-            &__description {
+            &_description {
                 font-size: 20px;
                 line-height: 24px;
             }
         }
     }
-    .block {
+    &__price {
         width: 100%;
         height: 105px;
         background-color: rgba(91, 177, 137, 1);
@@ -63,7 +63,7 @@ main {
         margin: 0;
         padding: 0;
     }
-    .description_offer {
+    &__description {
         height: 116px;
         width: 100%;
         font-weight: 300;
@@ -71,7 +71,7 @@ main {
         padding: 0 26px;
         text-align: center;
     }
-    .prices__about {
+    &__options-list {
         height: 300px;
         width: 100%;
         &_item {
@@ -88,11 +88,11 @@ main {
             }
         }
     }
-    &_button {
+    &__order-btn {
         height: 119px;
         width: 100%;
         @extend %center;
-        &_price-card {
+        &_form {
             color: white;
             height: 40px;
             width: 154px;
@@ -105,17 +105,16 @@ main {
     }
 }
 
-.text_description {
-    font-family: "Montserrat";
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 25px;
-}
-
+// .text_description {
+//     font-family: "Montserrat";
+//     font-weight: 300;
+//     font-size: 20px;
+//     line-height: 25px;
+// }
 // Second style
 .second {
     margin-left: 18px;
-    .header_price_offer {
+    .price-card__title {
         position: relative;
         overflow: hidden;
         &_special {

@@ -18,13 +18,13 @@ main {
   min-height: 100vh;
 }
 
-.price_button, .price .description_offer, .price .block, .price__card, .price, main {
+.price-card__order-btn, .price-card__description, .price-card__price, .price-card__title, .price-card, main {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.price {
+.price-card {
   min-height: 770px;
   max-width: 380px;
   background-color: rgb(51, 66, 71);
@@ -34,22 +34,22 @@ main {
   padding: 0;
   box-sizing: border-box;
 }
-.price__card {
+.price-card__title {
   width: 380px;
   height: 130px;
   flex-direction: column;
 }
-.price__card__title {
+.price-card__title_text {
   font-family: "Montserrat";
   font-size: 35px;
   line-height: 43px;
   font-weight: 700;
 }
-.price__card__title__description {
+.price-card__title_text_description {
   font-size: 20px;
   line-height: 24px;
 }
-.price .block {
+.price-card__price {
   width: 100%;
   height: 105px;
   background-color: rgb(91, 177, 137);
@@ -58,35 +58,35 @@ main {
   margin: 0;
   padding: 0;
 }
-.price .description_offer {
+.price-card__description {
   height: 116px;
   width: 100%;
   font-weight: 300;
   padding: 0 26px;
   text-align: center;
 }
-.price .prices__about {
+.price-card__options-list {
   height: 300px;
   width: 100%;
 }
-.price .prices__about_item {
+.price-card__options-list_item {
   height: 50px;
   display: flex;
   align-items: center;
   padding: 0 22px;
   list-style-type: none;
 }
-.price .prices__about_item_description {
+.price-card__options-list_item_description {
   margin-left: 22px;
 }
-.price .prices__about_item:nth-child(odd) {
+.price-card__options-list_item:nth-child(odd) {
   background-color: rgb(42, 52, 56);
 }
-.price_button {
+.price-card__order-btn {
   height: 119px;
   width: 100%;
 }
-.price_button_price-card {
+.price-card__order-btn_form {
   color: white;
   height: 40px;
   width: 154px;
@@ -97,21 +97,14 @@ main {
   border: none;
 }
 
-.text_description {
-  font-family: "Montserrat";
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 25px;
-}
-
 .second, .third {
   margin-left: 18px;
 }
-.second .header_price_offer, .third .header_price_offer {
+.second .price-card__title, .third .price-card__title {
   position: relative;
   overflow: hidden;
 }
-.second .header_price_offer_special, .third .header_price_offer_special {
+.second .price-card__title_special, .third .price-card__title_special {
   background-color: #dc3f45;
   font-weight: 700;
   font-size: 14px;
