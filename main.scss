@@ -39,27 +39,36 @@ main {
     box-sizing: border-box;
     &:nth-child(2) {
         margin-left: 18px;
-        .price-card__title {
-            position: relative;
-            overflow: hidden;
-            &_special {
-                background-color: #dc3f45;
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 17px;
-                color: #fff;
-                text-align: center;
-                position: absolute;
-                padding-top: 5px;
-                top: 30px;
-                right: -30px;
-                transform: rotate(45deg);
-                height: 25px;
-                width: 147px;
+        &_price {
+            &_bd-blue {
+                background-color: rgba(58, 107, 165, 1);
+            }
+            &__title {
+                position: relative;
+                overflow: hidden;
+                &_special {
+                    background-color: #dc3f45;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #fff;
+                    text-align: center;
+                    position: absolute;
+                    padding-top: 5px;
+                    top: 30px;
+                    right: -30px;
+                    transform: rotate(45deg);
+                    height: 25px;
+                    width: 147px;
+                }
             }
         }
-        .bd-blue {
-            background-color: rgba(58, 107, 165, 1);
+        &__order-btn {
+            &_form {
+                &bd-blue {
+                    background-color: rgba(58, 107, 165, 1);
+                }
+            }
         }
     }
     &:nth-child(3) {
@@ -135,43 +144,3 @@ main {
         }
     }
 }
-
-// .text_description {
-//     font-family: "Montserrat";
-//     font-weight: 300;
-//     font-size: 20px;
-//     line-height: 25px;
-// }
-// Second style
-// .second {
-//     margin-left: 18px;
-//     .price-card__title {
-//         position: relative;
-//         overflow: hidden;
-//         &_special {
-//             background-color: #dc3f45;
-//             font-weight: 700;
-//             font-size: 14px;
-//             line-height: 17px;
-//             color: #fff;
-//             text-align: center;
-//             position: absolute;
-//             padding-top: 5px;
-//             top: 30px;
-//             right: -30px;
-//             transform: rotate(45deg);
-//             height: 25px;
-//             width: 147px;
-//         }
-//     }
-//     .bd-blue {
-//         background-color: rgba(58, 107, 165, 1);
-//     }
-// }
-// Third style
-// .third {
-//     @extend.second;
-//     .bd-orange {
-//         background: rgba(236, 99, 42, 1);
-//     }
-// }
