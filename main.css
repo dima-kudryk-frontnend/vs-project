@@ -18,13 +18,13 @@ main {
   min-height: 100vh;
 }
 
-.section__price_button, .section__price .description_offer, .section__price .price, .section__price .header_price_offer, .section__price, main {
+.price_button, .price .description_offer, .price .block, .price__card, .price, main {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.section__price {
+.price {
   min-height: 770px;
   max-width: 380px;
   background-color: rgb(51, 66, 71);
@@ -34,18 +34,18 @@ main {
   padding: 0;
   box-sizing: border-box;
 }
-.section__price .header_price_offer {
+.price__card {
   width: 380px;
   height: 130px;
   flex-direction: column;
 }
-.section__price .header_price_offer .text_article {
+.price__card__title {
   font-family: "Montserrat";
   font-size: 35px;
   line-height: 43px;
   font-weight: 700;
 }
-.section__price .price {
+.price .block {
   width: 100%;
   height: 105px;
   background-color: rgb(91, 177, 137);
@@ -54,35 +54,35 @@ main {
   margin: 0;
   padding: 0;
 }
-.section__price .description_offer {
+.price .description_offer {
   height: 116px;
   width: 100%;
   font-weight: 300;
   padding: 0 26px;
   text-align: center;
 }
-.section__price .price__about {
+.price .prices__about {
   height: 300px;
   width: 100%;
 }
-.section__price .price__about_item {
+.price .prices__about_item {
   height: 50px;
   display: flex;
   align-items: center;
   padding: 0 22px;
   list-style-type: none;
 }
-.section__price .price__about_item_description {
+.price .prices__about_item_description {
   margin-left: 22px;
 }
-.section__price .price__about_item:nth-child(odd) {
+.price .prices__about_item:nth-child(odd) {
   background-color: rgb(42, 52, 56);
 }
-.section__price_button {
+.price_button {
   height: 119px;
   width: 100%;
 }
-.section__price_button_price-card {
+.price_button_price-card {
   color: white;
   height: 40px;
   width: 154px;
