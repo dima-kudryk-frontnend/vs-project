@@ -1,4 +1,4 @@
-@import './variables';
+@import './breackpoints';
 @import './mixin';
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 * {
@@ -11,7 +11,7 @@ body {
     font-family: "Montserrat";
     font-size: 15px;
     font-weight: 300;
-    background-color: black;
+    background-color: #141b1c;
 }
 
 main {
